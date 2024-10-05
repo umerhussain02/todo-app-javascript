@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .btn {
+        border: none;
+        background-color: #010e47;
+        color: rgb(255, 252, 252);
+        border-radius: 3px;
+        padding: 3px;
+      }
+
+      .box {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div>
+        <input type="text" placeholder="Enter New Todo" id="text" />
+        <button onclick="addTodo()">Add Todo</button>
+        <button onclick="deleteAll()">Delete All</button>
+      </div>
+
+      <div>
+        <ul id="list"></ul>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
